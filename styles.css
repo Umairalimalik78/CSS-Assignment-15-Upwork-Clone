@@ -1,11 +1,9 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== ROOT VARIABLES ===== */
 :root {
     --upGreen: #14a800;
     --upGreenDark: #108a00;
@@ -40,14 +38,12 @@ img {
     max-width: 100%;
 }
 
-/* ===== CONTAINER ===== */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* ===== NAVBAR ===== */
 .mainNav {
     background: var(--upWhite);
     position: sticky;
@@ -65,7 +61,6 @@ img {
     align-items: center;
 }
 
-/* Nav Links */
 .navLinks {
     display: flex;
     align-items: center;
@@ -93,7 +88,6 @@ img {
     color: var(--upGreen);
 }
 
-/* Chevron */
 .chevron {
     width: 8px;
     height: 8px;
@@ -111,7 +105,6 @@ img {
     margin-top: 3px;
 }
 
-/* Mega Menu */
 .megaMenu {
     display: none;
     position: absolute;
@@ -127,9 +120,9 @@ img {
     gap: 32px;
 }
 
-/* .navLinks li:hover .megaMenu {
+.navLinks li:hover .megaMenu {
     display: flex;
-} */
+}
 
 .megaCol {
     flex: 1;
@@ -163,7 +156,6 @@ img {
     margin: 14px 0;
 }
 
-/* Nav Right */
 .navRight {
     display: flex;
     align-items: center;
@@ -206,7 +198,6 @@ img {
     border-color: var(--upGreenDark);
 }
 
-/* ===== HERO ===== */
 .heroSection {
     background-color: var(--upWhite);
     display: flex;
@@ -364,7 +355,6 @@ img {
     padding: 8px 32px;
 }
 
-/* ===== CATEGORIES ===== */
 .categoriesSection {
     padding: 64px 0;
     background: var(--upWhite);
@@ -406,7 +396,6 @@ img {
     width: 150px;
 }
 
-/* ===== HOW IT WORKS ===== */
 .howSection {
     padding: 64px 0;
 }
@@ -510,7 +499,6 @@ img {
     background: var(--upGreen);
 }
 
-/* ===== PRICING INSIGHT ===== */
 .pricingSection {
     display: flex;
     align-items: center;
@@ -635,7 +623,6 @@ img {
     color: var(--upParrotGreen);
 }
 
-/* ===== HIRING OPTIONS ===== */
 .hiringSection {
     padding: 80px 0;
     background: var(--upWhite);
@@ -759,9 +746,7 @@ img {
     text-decoration: underline;
 }
 
-/* ===== REVIEWS SECTION ===== */
 .reviewsSection {
-    padding: 64px 0;
     background: var(--upWhite);
     background-image: url(reviews-graphic-b.jpg);
     background-repeat: no-repeat;
@@ -778,11 +763,10 @@ img {
 .reviewCard {
     border: 1px solid var(--upBorder);
     border-radius: 16px;
-    padding: 24px;
+    padding: 32px;
     background: var(--upWhite);
     display: flex;
     flex-direction: column;
-    gap: 16px;
     position: relative;
     overflow: hidden;
 }
@@ -794,23 +778,22 @@ img {
 }
 
 .reviewCategory span {
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 12px;
     color: var(--upTextMuted);
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .reviewText {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--upBlack);
     line-height: 1.65;
     flex: 1;
 }
 
 .reviewStars {
-    color: #f5a623;
-    font-size: 16px;
+    color: #df7606;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -818,9 +801,7 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 12px;
-    padding-top: 16px;
-    margin-top: auto;
+    margin-top: 32px;
 }
 
 .reviewMeta {
@@ -847,53 +828,55 @@ img {
 }
 
 .reviewAvatar {
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
 }
 
-/* ===== CTA ===== */
 .ctaSection {
-    background: var(--upGreen);
     padding: 80px 0;
+}
+
+.ctaContainer {
+    background: linear-gradient(135deg, #52dc1c, #3cd828, #00cc4a, #00c12b, #00ca4f, #47dc26);
     text-align: center;
+    border-radius: 16px;
+    padding: 48px;
+
 }
 
 .ctaTitle {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 700;
     color: var(--upWhite);
-    margin-bottom: 28px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 32px;
     line-height: 1.2;
 }
 
 .btnCtaWhite {
     display: inline-block;
     background: var(--upWhite);
-    color: var(--upGreen);
+    color: var(--upBlack);
     border: none;
-    border-radius: 100px;
-    padding: 14px 36px;
-    font-size: 15px;
-    font-weight: 700;
+    border-radius: 10px;
+    padding: 12px 36px;
+    font-size: 16px;
     cursor: pointer;
     font-family: var(--upFont);
-    transition: background 0.2s;
 }
 
 .btnCtaWhite:hover {
     background: #f0f0f0;
 }
 
-/* ===== FOOTER ===== */
-.mainFooter {
-    background: var(--upBlack);
-    padding: 60px 0 32px;
+
+.footerContainer {
+    padding: 72px;
+    margin: 24px;
+    background: var(--upTextMuted);
+    border-radius: 8px;
 }
 
 .footerGrid {
@@ -905,17 +888,17 @@ img {
 
 .footerColTitle {
     font-size: 12px;
-    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--upWhite);
+    color: rgba(255, 255, 255, 0.55);
     margin-bottom: 18px;
 }
 
 .footerLink {
+    color: var(--upWhite);
     display: block;
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
     margin-bottom: 10px;
     transition: color 0.2s;
 }
@@ -924,80 +907,114 @@ img {
     color: var(--upWhite);
 }
 
-.footerDivider {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 24px;
-}
-
 .footerBottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
+  padding-top: 8px;
 }
 
-.footerLogoText {
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--upWhite);
-    letter-spacing: -1px;
+.footerBottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.footerSocialGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerFollowText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
 }
 
 .footerSocial {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .footerSocial a {
-    color: rgba(255, 255, 255, 0.55);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: color 0.2s, border-color 0.2s;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 .footerSocial a:hover {
-    color: var(--upWhite);
-    border-color: rgba(255, 255, 255, 0.6);
+  color: var(--upWhite);
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.footerLegal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
+.footerMobileGroup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footerMobileText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+}
+
+.footerMobileGroup a {
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.footerMobileGroup a:hover {
+  color: var(--upWhite);
+}
+
+.footerLegalDivider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+.footerLegalRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 0;
 }
 
 .footerCopy {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
 }
 
 .footerLegalLinks {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footerLegalLink {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.35);
-    padding: 0 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    transition: color 0.2s;
-}
-
-.footerLegalLink:last-child {
-    border-right: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--upWhite);
+  padding: 0 14px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
 }
 
 .footerLegalLink:hover {
-    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+
+.footerPrivacyChoice {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
